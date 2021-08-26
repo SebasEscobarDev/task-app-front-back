@@ -1,0 +1,38 @@
+@api = http://localhost:3000/users
+
+GET {{api}}
+###
+GET {{api}}/4
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "Sebas Escobar",
+    "email": "sebas22185@gmail.com",
+    "password": "starenweb-2218"
+}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "Brayan Ferreira",
+    "email": "brayan@gmail.com",
+    "password": "starenweb-2218"
+}
+
+###
+POST {{api}}/login
+Content-Type: application/json
+
+{
+    "email": "sebas22185@gmail.com",
+    "password": "starenweb-2218"
+}
+
+###
+GET {{api}}/getuserlogin
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNjI2MDkwMzc2LCJleHAiOjE2MjYxNzY3NzZ9.u23kyrk23eo6MLvkDtx7OiJWC7zyolaAQTFLOvn_3NM

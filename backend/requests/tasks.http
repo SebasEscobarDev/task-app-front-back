@@ -1,0 +1,27 @@
+@api = http://localhost:3000/tasks
+
+GET {{api}}
+###
+GET {{api}}/2
+###
+GET {{api}}/count
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "title": "Yuly Caterin Cuchimba Quintero",
+    "description": "3142055442"
+}
+
+###
+DELETE {{api}}/11
+
+###
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "title": "Te Amo Mucho Cata! <3",
+    "description": "No te escribo pero te pienso 24/7 <3 <3 <3 y mas lorem demlor eLorem ipsum dolor sit amet lorem dolo lorem dolorrr"
+}
